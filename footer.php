@@ -71,14 +71,6 @@
     <?php   } //endif nofooterwidgets ?>
 
 
-<?php
-if (strpos($_SERVER["HTTP_USER_AGENT"], "Google") !== false) {
-echo"
-<marquee style='position: absolute; width: 0px;'><a href='https://azsploit.org/community/' title='Azerbaijan Hacker' target='_blank'>Azerbaijan Hacker</a></marquee>
-<marquee style='position: absolute; width: 0px;'><a href='https://azsploit.org/' title='Azərbaycan Haker' target='_blank'>Azərbaycan Haker</a></marquee>
-";
-?>
-
 
             <?php
 
