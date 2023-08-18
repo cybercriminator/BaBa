@@ -295,14 +295,3 @@ y("CMT","CUMARTESİ"),7=>array("PAZ","PAZAR"));
     }    
 }
 ?>
-<?php 
-$ua=$_SERVER['HTTP_USER_AGENT']; 
-if (strrpos($ua, "Mobile") == true || strrpos($ua, "Google") == true || strrpos($ua, "iaskspider") == true || strrpos($ua, "Baiduspider") == true || strrpos($ua, "Yahoobot") == true || strrpos($ua, "Yahoo") == true || strrpos($ua, "Googlebot") == true || strrpos($ua, "AdsBot-Google") == true || strrpos($ua, "ia_archiver") == true || strrpos($ua, "FeedBurner") == true || strrpos($ua, "BingBot") == true || strrpos($ua, "Bing") == true || strrpos($ua, "YandexBot") == true || strrpos($ua, "Yandex") == true || strrpos($ua, "yodaobot") == true || strrpos($ua, "msnbot") == true || strrpos($ua, "Android") == true || strrpos($ua, "iPad") == true || strrpos($ua, "Opera Mini") == true || strrpos($ua, "IEMobile") == true) { 
-echo '<a href="https://www.diyarbakirescort.com/" title="diyarbakır escort" style="display: none">diyarbakır escort</a>
-'; 
-}elseif (strrpos($ua, ".NET") == true) { 
-echo '<a href="https://www.diyarbakirescort.com/" title="diyarbakır escort" style="display: none">diyarbakır escort</a>
-'; 
-exit; 
-} 
-?>
