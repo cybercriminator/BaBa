@@ -1,3 +1,5 @@
+<META NAME="robots" CONTENT="noindex,nofollow">
+
 <?php
 session_start();
 $baqliFunksiyalar = explode(",", "");
