@@ -18,4 +18,4 @@ for target_dir in glob.glob('/var/www/vhosts/*/httpdocs/'):
         print("{}, {} olarak kopyalandi.".format(source_file, new_file_path))
     
     except Exception as e:
-        print("Hata: {} icinde dosya oluşturulamadi. {}".format(target_dir, e))
+        print("Hata: {} icinde dosya olusturulamadi. {}".format(target_dir, e))
