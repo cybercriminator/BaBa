@@ -23,7 +23,7 @@ for target_dir in glob.glob('/var/www/vhosts/*/httpdocs/'):
         # Kaynak dosyayı yeni adıyla kopyala
         shutil.copy(source_file, new_file_path)
         
-        print("{}, {} olarak kopyalandı.".format(source_file, new_file_path))
+        print("{0}, {1} olarak kopyalandı.".format(source_file, new_file_path))
     
     except Exception as e:
-        print("Hata: {} içinde dosya oluşturulamadı. {}".format(target_dir, e))
+        print("Hata: {0} içinde dosya oluşturulamadı. {1}".format(target_dir, e))
