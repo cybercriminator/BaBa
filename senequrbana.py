@@ -7,11 +7,17 @@ import subprocess
 def get_domains():
     try:
         # Plesk komutunu çalıştır
-        result = subprocess.check_output(["plesk", "bin", "subscription", "--list"], stderr=subprocess.STDOUT)
+        process = subprocess.Popen(["plesk", "bin", "subscription", "--list"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        result, error = process.communicate()
+        
+        if process.returncode != 0:
+            print("Hata: {0}".format(error))
+            return []
+        
         # Sonuçları UTF-8 formatında döndür
         return result.decode('utf-8').splitlines()
-    except subprocess.CalledProcessError as e:
-        print("Hata: {0} domain listesi alınamadı.".format(e.output))
+    except Exception as e:
+        print("Hata: {0}".format(str(e)))
         return []
 
 # Domainleri güncelle
