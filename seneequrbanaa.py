@@ -4,7 +4,7 @@
 import subprocess
 
 # Plesk komutlarının tam yolu
-plesk_path = "/usr/local/psa/bin/plesk"
+plesk_path = "/usr/local/psa/bin/user"
 
 # Tüm domainleri listele
 def get_domains():
