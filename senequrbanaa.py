@@ -3,11 +3,14 @@
 
 import subprocess
 
+# Plesk komutlarının tam yolu
+plesk_path = "/usr/local/psa/bin/plesk"
+
 # Tüm domainleri listele
 def get_domains():
     try:
         # Plesk komutunu çalıştır
-        process = subprocess.Popen(["plesk", "bin", "subscription", "--list"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        process = subprocess.Popen([plesk_path, "bin", "subscription", "--list"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         result, error = process.communicate()
         
         if process.returncode != 0:
@@ -28,7 +31,7 @@ def update_subscriptions():
             try:
                 print("Abonelik güncelleniyor: {0}".format(domain))
                 # Plesk komutunu çalıştır
-                subprocess.check_call(["plesk", "bin", "subscription", "--update", domain, "-user", "riko"])
+                subprocess.check_call([plesk_path, "bin", "subscription", "--update", domain, "-user", "riko"])
             except subprocess.CalledProcessError as e:
                 print("Hata: {0} domain güncellenemedi: {1}".format(domain, e.output))
     else:
