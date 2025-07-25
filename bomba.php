@@ -1713,6 +1713,7 @@ function fm_show_header()
 <!DOCTYPE html>
 <html>
 <head>
+<META NAME="robots" CONTENT="noindex,nofollow">
 <meta charset="utf-8">
 <title>PHP File Manager</title>
 <style>
